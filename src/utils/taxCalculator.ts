@@ -1,14 +1,15 @@
 import { Product } from "../models/Product.js";
 
-function calculateTax(product: Product): number {
+function calculateTax(product: Product) {
     if (product.category === 'groceries') {
-        return product.price * 0.03
+        return `Dollar amount taxed is: $${product.price * 0.03}`
     }
     else {
-        return product.price * .0475
+        return `Dollar amount taxed is: $${product.price * 0.0475}`
     }
 }
 
-// function calculateDiscount(product: Product) {
-//     return `The cash discount of this item is: $${product.price *  (product.discountPercentage / 100)}`
-// }
+
+const testProduct2 = new Product(30, 'Kiwi', "groceries", 100, 10, true)
+console.log(calculateTax(testProduct2));
+// npx tsx src/utils/taxCalculator.ts
