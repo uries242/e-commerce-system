@@ -6,29 +6,19 @@
 ts configuration. missing key dev dependency
 - solution: npm install -D tsx
 
-2. showing the data in a clean manner
+2. returning the data in a UI - friendly 
+
+3. syntax 
+
+4. error handling
 
 
-    {
-      id: 30,
-      title: 'Kiwi',
-      description: 'Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.',
-      category: 'groceries',
-      price: 2.49,
-      discountPercentage: 15.22,
-      rating: 4.93,
-      stock: 99,
-      tags: [Array],
-      sku: 'GRO-BRD-KIW-030',
-      weight: 5,
-      dimensions: [Object],
-      warrantyInformation: '6 months warranty',
-      shippingInformation: 'Ships overnight',
-      availabilityStatus: 'In Stock',
-      reviews: [Array],
-      returnPolicy: '7 days return policy',
-      minimumOrderQuantity: 30,
-      meta: [Object],
-      images: [Array],
-      thumbnail: 'https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp'
-    }
+api services was updated to checks for "response.ok" before proceeding.  If the server returned an error status, it throws immediately.
+It also uses a custom AppError with a status code to know what kind of error occurred. I also utilized  "instanceof" to distinguish between known errors (AppError) and unexpected ones.
+
+## RESOURCES
+https://www.w3schools.com/typescript/typescript_error_handling.php
+error handling:
+ - https://medium.com/@arreyetta/error-handling-in-typescript-best-practices-80cdfe6d06db
+ - https://engineering.udacity.com/handling-errors-like-a-pro-in-typescript-d7a314ad4991             
+
