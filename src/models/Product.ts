@@ -1,20 +1,22 @@
 export class Product {
   productId: number;
   title: string;
+  category: string
   price: number;
   discountPercentage: number;
   inStock: boolean;
-  // return productCost * taxRate
 
   constructor(
     productId: number,
     title: string,
+    category: string,
     price: number,
     discountPercentage: number,
     inStock: boolean = true,
   ) {
     this.productId = productId;
     this.title = title;
+    this.category = category; 
     this.price = price;
     this.discountPercentage = discountPercentage;
     this.inStock = inStock;

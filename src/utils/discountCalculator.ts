@@ -7,8 +7,8 @@ function calculateDiscount(product: Product) {
 
 
 
-const testProduct = new Product(30, 'Kiwi', 100, 10, true)
-console.log(calculateDiscount(testProduct));
+// const testProduct = new Product(30, 'Kiwi', 100, 10, true)
+// console.log(calculateDiscount(testProduct));
 
 // fetch('https://dummyjson.com/products/')
 // .then(res => res.json())
