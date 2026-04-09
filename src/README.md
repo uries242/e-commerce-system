@@ -3,6 +3,8 @@
 
 ## CHALLENGES
 
+ setting up the project folders
+
 ts configuration. missing key dev dependency
 - solution: npm install -D tsx
 
